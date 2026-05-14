@@ -52,9 +52,8 @@
 
 ### 📊 Dashboard
 
-<p align="center">
-  <img src="screenshots/dashboard.png" width="100%">
-</p>
+
+![Dashboard](screenshots/dasboard.png)
 
 ---
 
