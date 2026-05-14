@@ -22,10 +22,10 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [Screenshots](#-screenshots)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Getting Started](#-getting-started)
-- [Database Schema](#-database-schema)
 - [Project Structure](#-project-structure)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -40,12 +40,60 @@
 
 ---
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+
+<p align="center">
+  <img src="screenshots/login.png" width="100%">
+</p>
+
+---
+
+### 📊 Dashboard
+
+<p align="center">
+  <img src="screenshots/dashboard.png" width="100%">
+</p>
+
+---
+
+### 👤 Patient Management
+
+<p align="center">
+  <img src="screenshots/patient.png" width="100%">
+</p>
+
+---
+
+### 🩺 Doctor Management
+
+<p align="center">
+  <img src="screenshots/doctor.png" width="100%">
+</p>
+
+---
+
+### 📅 Appointment Scheduling
+
+<p align="center">
+  <img src="screenshots/appointments.png" width="100%">
+</p>
+
+### 📅 Medical Record
+
+<p align="center">
+  <img src="screenshots/record.png" width="100%">
+</p>
+
+---
+
 ## ✨ Features
 
 ### 👤 Patient Management
 - Register and manage complete patient profiles
 - Track medical history and visit records
-- Secure authentication for patient portal access
+- Manage patient information efficiently
 
 ### 🩺 Doctor Management
 - Add and manage doctor profiles with specializations
@@ -56,11 +104,6 @@
 - Book, update, and cancel appointments
 - Real-time availability checking
 - Appointment status tracking (Pending / Confirmed / Completed / Cancelled)
-
-### 🔐 Authentication & Security
-- Role-based access control (Admin, Doctor, Patient)
-- Secure login with Laravel authentication
-- Protected routes and middleware
 
 ### 🗄️ Optimized Database
 - Normalized relational schema for clean data integrity
@@ -81,7 +124,7 @@
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -95,33 +138,33 @@ Make sure you have the following installed:
 
 ### Installation
 
-**1. Clone the repository**
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/abusufyan01/medicore.git
 cd medicore
 ```
 
-**2. Install PHP dependencies**
+### 2️⃣ Install PHP dependencies
 
 ```bash
 composer install
 ```
 
-**3. Install Node dependencies**
+### 3️⃣ Install Node dependencies
 
 ```bash
 npm install && npm run dev
 ```
 
-**4. Configure environment**
+### 4️⃣ Configure environment
 
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-**5. Set up the database**
+### 5️⃣ Set up the database
 
 Open `.env` and update your database credentials:
 
@@ -134,59 +177,29 @@ DB_USERNAME=your_db_user
 DB_PASSWORD=your_db_password
 ```
 
-**6. Run migrations and seed data**
+### 6️⃣ Run migrations and seed data
 
 ```bash
 php artisan migrate --seed
 ```
 
-**7. Start the development server**
+### 7️⃣ Start the development server
 
 ```bash
 php artisan serve
 ```
 
-Visit `http://localhost:8000` in your browser.
+Visit:
 
----
-
-## 🗄️ Database Schema
-
-```
-patients
-├── id (PK)
-├── name
-├── email
-├── phone
-├── date_of_birth
-├── gender
-├── address
-└── timestamps
-
-doctors
-├── id (PK)
-├── name
-├── email
-├── specialization
-├── phone
-├── department_id (FK)
-└── timestamps
-
-appointments
-├── id (PK)
-├── patient_id (FK → patients)
-├── doctor_id (FK → doctors)
-├── appointment_date
-├── status (pending/confirmed/completed/cancelled)
-├── notes
-└── timestamps
+```bash
+http://localhost:8000
 ```
 
 ---
 
 ## 📁 Project Structure
 
-```
+```bash
 medicore/
 ├── app/
 │   ├── Http/
@@ -207,6 +220,7 @@ medicore/
 │   └── views/
 ├── routes/
 │   └── web.php
+├── screenshots/
 ├── .env.example
 ├── composer.json
 └── README.md
@@ -216,12 +230,29 @@ medicore/
 
 ## 🤝 Contributing
 
-Contributions are welcome! To contribute:
+Contributions are welcome!
+
+To contribute:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
+2. Create a feature branch
+
+```bash
+git checkout -b feature/your-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add some feature"
+```
+
+4. Push to the branch
+
+```bash
+git push origin feature/your-feature
+```
+
 5. Open a Pull Request
 
 ---
