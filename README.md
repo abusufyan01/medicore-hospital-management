@@ -49,11 +49,11 @@
 </p>
 
 ---
-
 ### 📊 Dashboard
 
-
-![Dashboard](screenshots/dasboard.png)
+<p align="center">
+  <img src="screenshots/dashboard.png" width="100%">
+</p>
 
 ---
 
